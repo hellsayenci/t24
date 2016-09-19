@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_categories"
+        android:title="Kategoriler"
+        android:icon="@drawable/ic_format_list_bulleted_white_36dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_reresh"
+        android:title="Yenile"
+        android:icon="@drawable/ic_refresh_white_36dp"
+        app:showAsAction="always" />
+</menu>

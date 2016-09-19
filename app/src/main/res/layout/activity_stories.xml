@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hellsayenci.t24.StoriesActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/nestedScrollView"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            custom:auto_cycle="true"
+            />
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            style="@style/AndroidImageSlider_Magnifier_Oval_Black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvStories"
+            android:layout_marginTop="4dp"></android.support.v7.widget.RecyclerView>
+
+        <include
+            android:id="@+id/llLoading"
+            layout="@layout/view_more_progress" />
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
